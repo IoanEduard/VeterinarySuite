@@ -1,0 +1,8 @@
+{
+    "csharpextensions.privateMemberPrefix": "_",
+    "csharpextensions.useThisForCtorAssignments": false,
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true
+    }
+}

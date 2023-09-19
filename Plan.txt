@@ -1,0 +1,78 @@
+09-08-2023
+basic scheleton is done
+
+09-08-2023
+1. Add Identity
+    - Admin user is seeded.
+    - Admin creates the users and assign roles
+
+    Create User
+    Login 
+    Recover password
+
+2. Add a homepage in Angular
+    Register, Login forms for the client (use a different DTO so it can't pass roles)
+    Recover password
+
+Chatgpt question:
+
+I wanna make an application that can be used by many clients, but the ones that buy it should be the owner/admin of it. 
+Get Started -> buying license -> Make an Account, it creates an account as an admin.
+Then admin creates other users
+How do I make available resources for the users that are created by this admin? Do I use something 
+like a license of the product when I serve the data?
+    
+Need to implement a multi-tenant something..
+    
+Lets just implement today Identity into the project.
+    Register
+    Login
+    Recover Password
+
+    Creating User with role
+    Assigning role to user
+
+
+What works so far:
+    Register
+    Login
+    EmailSenderService
+    ConfirmEmail
+    Recover Password
+    Reset Password
+
+Whats next
+    Implement Roles
+    Add a business/owner table
+    Proper error handling
+    Clean and improve methods in account controller
+
+Tenants   
+    Add tenant logic for the business/owner
+    Tenant can create roles
+    Tenant can create users and assign roles
+    Users created with a specific tenantId can see only their resources
+        - Quick test: 
+            Validate the tenantId 
+            Add a pacient from two different accounts
+            Get data for specific tenants 
+Stripe
+    Integrate stripe sandbox, very basic endpoints to hit the Stripe sandbox
+
+Licensing
+    Implement licensing logic
+    Put together with stripe buying a subscription
+
+Chat 
+
+Implement versioning of the application
+Plan the modules for the actual application, do the back-end endpoints.
+    Pacients 
+    Employees 
+    Appointments
+    Stock
+    ..and more
+
+
+Questionable decisions:
+1. Generic repository using void on some methods and calling tolistasync

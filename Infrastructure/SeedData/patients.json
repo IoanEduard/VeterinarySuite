@@ -1,0 +1,22 @@
+[{
+        "Id": "7B7B68DA-45DA-4AC3-8E5A-7F63E69D4C9A",
+        "Name": "Whiskers",
+        "Age": 3,
+        "DateOfBirth": "2020-01-15T00:00:00",
+        "Discriminator": "Cat"
+    },
+    {
+        "Id": "CE3F88E2-C88F-4F11-AE97-6A5F50507D63",
+        "Name": "Fido",
+        "Age": 5,
+        "DateOfBirth": "2018-05-20T00:00:00",
+        "Discriminator": "Dog"
+    },
+    {
+        "Id": "B4A8E534-3F73-41D1-9B4B-FD15BAA4E4F2",
+        "Name": "Polly",
+        "Age": 2,
+        "DateOfBirth": "2021-03-10T00:00:00",
+        "Discriminator": "Parrot"
+    }
+]

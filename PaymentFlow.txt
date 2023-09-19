@@ -1,0 +1,20 @@
+High level UI flow
+
+1. We have subscription plans
+2. User clicks one of them 
+3. User will have to register for an account
+4. User will submit personal and business information
+5. User has to confirm email 
+6. User will have to confirm the payment and review what he pays for.
+7. Once confirmed, we make a payment to Stripe.
+8. If payment successful, user gets a tenantId
+9. Provide access to features as user has a valid subscription
+
+Implementation plan.
+Implement payment logic that will take a subscription plan ID from the user
+Complete the payment so it works in stripe sandbox.
+
+Add user personal and business information tables to the IdentityUser
+Create a paymentReview endpoint that will pull from the db what user has submitted so far and is related to the payment
+
+Implement tenancy logic.

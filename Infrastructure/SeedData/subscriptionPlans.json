@@ -1,0 +1,22 @@
+[{
+        "Name": "Basic Plan",
+        "Description": "A basic subscription plan",
+        "Days": 30,
+        "Price": 19.99,
+        "IsActive": true
+    },
+    {
+        "Name": "Standard Plan",
+        "Description": "A standard subscription plan",
+        "Days": 60,
+        "Price": 39.99,
+        "IsActive": true
+    },
+    {
+        "Name": "Premium Plan",
+        "Description": "A premium subscription plan",
+        "Days": 90,
+        "Price": 59.99,
+        "IsActive": true
+    }
+]
